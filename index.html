@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Speech Robot🤖</title>
+</head>
+<body>
+    <div class="container">
+        <textarea name="speechInput" id="speechInput" rows="4" cols="50"></textarea>
+        <div class="controls row">
+            <div class="d-flex gap-2 align-items-center">
+                <select id="voiceSelect" class="form-select form-select-sm"></select>
+                <button class="btn btn-sm btn-outline-secondary" onclick="loadvoices()">Refresh Voices</button>
+            </div>
+        </div>
+        <div class="control-buttons">
+            <div class="d-flex gap-2 align-items-center">
+                <button class="btn btn-info btn-sm" onclick="speak()">Speak</button>
+                <button class="btn btn-info btn-sm" onclick="pauseSpeech()">Pause</button>
+                <button class="btn btn-info btn-sm" onclick="resumeSpeech()">Resume</button>
+                <button class="btn btn-info btn-sm" onclick="stopSpeech()">Stop</button>
+                
+            </div>
+        </div>
+    </div>
+    <script src="speech.js"></script>
+</body>
+</html>
